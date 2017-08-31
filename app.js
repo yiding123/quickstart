@@ -16,9 +16,7 @@ App({
       typeof cb == "function" && cb(this.globalData.userInfo)
     }else{
       //调用登录接口
-      this.admx.login({
-        url: that.config.service.loginUrl,
-        method:"GET",
+      this.admx.login.login({
         succ: function (res) {
           console.log("--login success");
           console.log(res);
