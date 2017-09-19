@@ -16,7 +16,7 @@ App({
       typeof cb == "function" && cb(this.globalData.userInfo)
     }else{
       //调用登录接口
-      this.admx.login.login({
+      this.admx.login.loginWithWX({
         succ: function (res) {
           console.log("--login success");
           console.log(res);
