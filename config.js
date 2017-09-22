@@ -1,13 +1,10 @@
 /**
  * 小程序配置文件
  */
-
-
-// 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://api.cloudadmx.com';
+var constants = require("./lib/admx-sdk/lib/constants");
+var host = constants.ADMX_HOST;
 var custom = 'custom';
 var apiUrlBase = host + "/" + custom ;
-
 var config = {
     // 下面的地址配合云端 Demo 工作
     service: {
